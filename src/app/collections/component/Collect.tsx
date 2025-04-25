@@ -29,7 +29,7 @@ export default function Collect() {
                     duration: 2,
                     delay: 0.8,
                   }}
-                  className="h-screen bg-[url(/images/collectHero.jpg)]  bg-fixed bg-cover bg-bottom overflow-hidden" 
+                  className="h-screen bg-[url(/images/collectHero.jpg)]  bg-fixed bg-cover lg:bg-bottom bg-right overflow-hidden" 
                 >
             
           <div className="md:ml-25 md:p-10">

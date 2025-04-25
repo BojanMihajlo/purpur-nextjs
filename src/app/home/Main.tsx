@@ -39,7 +39,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
 
   return (
     <>
-      <div ref={sectionRef} className='md:h-[465vh] h-[420vh] relative'>
+      <div ref={sectionRef} className='md:h-[465vh] h-[455vh] relative'>
 
 
         <div
@@ -49,7 +49,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
         >
           <motion.div
           style={{fontSize:fontSizeMedium,overflow:"hidden"}}
-          className='p-10 md:block hidden'
+          className='p-10 lg:block hidden'
           >
            SINCE 1992...
  
@@ -61,7 +61,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.6 }}
-          className='p-10 md:hidden block text-5xl font-bold'
+          className='p-10 lg:hidden block text-4xl font-bold'
           >
            SINCE 1992...
  
@@ -70,7 +70,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
           
 
           <div className='flex flex-col md:flex-row justify-center items-center gap-6 px-4'>
-            <div className='md:block hidden'>
+            <div className='lg:block hidden'>
           <Image
           src={imageUrls[0]}
           alt='photo'
@@ -83,7 +83,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
       <div>
          <motion.div
          style={{ scale, y,x:x,rotate}}
-         className='sticky top-20 md:block hidden' 
+         className='sticky top-20 lg:block hidden' 
          >
           <Image
            src={'/images/yarn31.webp'}
@@ -97,7 +97,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
 
           <motion.div
          style={{ scale, y,x:xc,rotate}}
-         className='sticky top-20 md:hidden block' 
+         className='sticky top-20 lg:hidden block' 
          >
           <Image
            src={'/images/yarn31.webp'}
@@ -118,7 +118,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
 
     <div   className=" w-full h-60 bg-amber-100" >
     <motion.div
-    className='text-center md:block hidden'
+    className='text-center lg:block hidden'
     style={{fontSize:fontSizeBig}}
       
       >
@@ -126,7 +126,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
         </motion.div>
 
         <motion.div
-    className='text-center md:hidden block'
+    className='text-center lg:hidden block'
     style={{fontSize:fontSizeSmall}}
       
       >
@@ -152,9 +152,9 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
             </div>
     </Link>
     </div>
-     <div   className=" w-full h-50 md:-mt-5 pt-10 bg-amber-100 text-center">
+     <div   className=" w-full h-50 -mt-5 pt-10 bg-amber-100 text-center">
          <motion.div
-            className='md:text-9xl text-5xl font-bold md:font-normal'
+            className='lg:text-9xl text-5xl font-bold md:font-normal'
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -169,13 +169,13 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
                <Link href='/collections/our-western-story'>
          <div className='h-150 bg-cover bg-fixed mb-20 rounded-bl-full' style={{backgroundImage:`url(${imageUrls[7]})`}}></div>
          </Link>
-          <div className='md:h-100 h-40'></div>
+          <div className='lg:h-100 h-40'></div>
 
                <div className=' border-t-2 rounded-tl-full  flex justify-center items-center p-20'>
                            
                                 <div  className=''>
                                    
-                                    <div className='pl-110 pt-10 md:block hidden'>
+                                    <div className='pl-110 pt-10 lg:block hidden'>
                                        
                                         <Image
                                          src={imageUrls[6]}
@@ -189,7 +189,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
 
                                     <motion.div 
                                    
-                                   className='-mt-5 md:text-9xl text-4xl font-bold md:font-normal ml-5 md:ml-0 '
+                                   className='-mt-5 lg:text-9xl text-4xl font-bold lg:font-normal ml-5 md:ml-0 '
                                    initial={{ opacity: 0, y: 80 }}
                                    whileInView={{ opacity: 1, y: 0 }}
                                    transition={{ duration: 0.8, ease: "easeOut" }}

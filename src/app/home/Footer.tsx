@@ -5,7 +5,7 @@ import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-10 px-4 md:rounded-bl-full  h-150 bg-[url(/images/yarn3.jpg)] bg-cover bg-no-repeat bg-top">
+    <footer className=" text-white py-10 px-4 md:rounded-bl-full  h-150 bg-[url(/images/yarn3.jpg)] bg-cover bg-no-repeat md:bg-top bg-center">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Brand */}
         <div className="text-2xl font-bold">
@@ -53,7 +53,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Text */}
-      <div className="text-center text-xl text-amber-50 mt-25 font-bold shadow-2xl ">
+      <div className="text-center md:text-xl text-amber-50 mt-25 font-bold shadow-2xl ">
         © {new Date().getFullYear()} MyBrand. All rights reserved.
       </div>
     </footer>

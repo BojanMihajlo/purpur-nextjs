@@ -29,9 +29,9 @@ const Collection:React.FC<MainProps> =({formatSlug,imageHtml}) => {
            <div className="md:ml-25 md:p-10">
                     <Navbar/>
                    </div>
-            <div className="md:pt-100 pt-120 md:pl-40 pl-20"> 
+            <div className="lg:pt-100 md:pt-80 md:pl-40 pt-100 lg:pl-40 pl-20"> 
            
-        <h1 className="md:text-6xl text-3xl text-center font-bold text-white " style={{textShadow:"2px 2px 4px red"}} >
+        <h1 className="lg:text-6xl text-3xl text-center font-bold text-white " style={{textShadow:"2px 2px 4px red"}} >
           {formatSlug}
         </h1>
        </div> 
