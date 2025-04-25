@@ -33,6 +33,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
     const scale = useTransform(scrollYProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], [1, 0.6,0.8,0.2,1,1.2]); // small zoom
     const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]); // optional spin
     const xc = useTransform(scrollYProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], [0, 100, -200, 160, -100,-10]); // zig-zag pattern
+    const yc = useTransform(scrollYProgress, [0, 1], [0, 2320]); // vertical travel
 
     
     const images = [imageUrls[1],imageUrls[2],imageUrls[3],imageUrls[4]]
@@ -82,7 +83,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
       </div>
       <div>
          <motion.div
-         style={{ scale, y,x:x,rotate}}
+         style={{ scale, y:y,x:x,rotate}}
          className='sticky top-20 lg:block hidden' 
          >
           <Image
@@ -96,7 +97,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
           </motion.div>
 
           <motion.div
-         style={{ scale, y,x:xc,rotate}}
+         style={{ scale, y:yc,x:xc,rotate}}
          className='sticky top-20 lg:hidden block' 
          >
           <Image
