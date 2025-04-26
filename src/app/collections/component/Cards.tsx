@@ -58,7 +58,7 @@ const Cards: React.FC<MainProps> = ({ data, coverImages }) => {
   useEffect(() => {
     const randoms = coverImages.map(() => ({
       x: Math.floor(Math.random() * 300 - 300),
-      y: Math.floor(Math.random() * 300 - 150),
+      y: Math.floor(Math.random() * 300 - 300),
       rotate: Math.floor(Math.random() * 60 - 30),
     }));
     setTransforms(randoms);

@@ -33,14 +33,14 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
     const scale = useTransform(scrollYProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], [1, 0.6,0.8,0.2,1,1.2]); // small zoom
     const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]); // optional spin
     const xc = useTransform(scrollYProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], [0, 100, -200, 160, -100,-10]); // zig-zag pattern
-    const yc = useTransform(scrollYProgress, [0, 1], [0, 2500]); // vertical travel
+    const yc = useTransform(scrollYProgress, [0, 1], [0, 2510]); // vertical travel
 
     
     const images = [imageUrls[1],imageUrls[2],imageUrls[3],imageUrls[4]]
 
   return (
     <>
-      <div ref={sectionRef} className='md:h-[465vh] h-[455vh] relative'>
+      <div ref={sectionRef} className='md:h-[465vh] h-[430vh] relative'>
 
 
         <div

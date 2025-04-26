@@ -13,7 +13,7 @@ export default function ContactComp() {
           exit={{ y: '100%' }}       // Optionally animate off-screen below when removed
           transition={{ duration: 2 }} // Control the duration of the animation
         >
-       <div className="h-screen bg-[url(/images/contactCover.jpg)] rounded-bl-full  bg-fixed bg-cover md:bg-center bg-right " >
+       <div className="md:h-screen h-[92vh] bg-[url(/images/contactCover.jpg)] rounded-bl-full  bg-fixed bg-cover md:bg-center bg-right " >
         <div className="md:ml-25 md:p-10">
          <Navbar/>
         </div>
