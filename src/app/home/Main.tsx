@@ -206,6 +206,9 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
                          </div>
 
         </div>
+
+        <div className='h-150 bg-cover bg-bottom  bg-fixed  rounded-tl-full' style={{backgroundImage:`url(${imageUrls[8]})`}}></div>
+
     </>
   )
 }
