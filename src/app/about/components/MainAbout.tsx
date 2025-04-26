@@ -48,7 +48,7 @@ const MainAbout:React.FC<MainProps> = ({data, secondText,firstText,thirdText}) =
 
     <div className=' bg-[url(/images/about2.jpg)] h-120 bg-cover bg-fixed rounded-bl-full md:my-10'></div>
     {/* <div className='md:h-25'></div> */}
-    <div className='p-10  border-t-2 border-l-2 rounded-4xl md:mx-20 my-15 md:text-2xl'>
+    <div className='p-10  border-t-2 border-l-2 rounded-4xl md:mx-20 mx-5 my-15 md:text-2xl'>
       <p>{thirdText}</p>
 
     </div>

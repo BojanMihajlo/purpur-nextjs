@@ -12,7 +12,7 @@ export default function AboutHero() {
           exit={{ y: '100%' }}       // Optionally animate off-screen below when removed
           transition={{ duration: 2 }} // Control the duration of the animation
         >
-       <div className="md:h-screen h-[92vh] bg-[url(/images/aboutCo.jpg)] rounded-bl-full bg-fixed bg-cover bg-top " >
+       <div className="md:h-screen h-[93vh] bg-[url(/images/aboutCo.jpg)] rounded-bl-full bg-fixed bg-cover bg-top " >
         <div className="md:ml-25 md:p-10">
          <Navbar/>
         </div>

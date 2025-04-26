@@ -40,7 +40,7 @@ const Main: React.FC<MainProps> = ({ data, imageUrls }) =>{
 
   return (
     <>
-      <div ref={sectionRef} className='md:h-[465vh] h-[430vh] relative'>
+      <div ref={sectionRef} className='md:h-[465vh] h-[420vh] relative'>
 
 
         <div

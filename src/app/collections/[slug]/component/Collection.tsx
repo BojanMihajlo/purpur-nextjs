@@ -24,7 +24,7 @@ const Collection:React.FC<MainProps> =({formatSlug,imageHtml}) => {
                     duration: 2,
                     delay: 0.8,
                   }}
-                  className="md:h-screen h-[92vh] bg-[url(/images/coverCol1.jpg)]  bg-fixed bg-cover bg-center overflow-hidden mb-10 " 
+                  className="md:h-screen h-[93vh] bg-[url(/images/coverCol1.jpg)]  bg-fixed bg-cover bg-center overflow-hidden mb-10 " 
                 >
            <div className="md:ml-25 md:p-10">
                     <Navbar/>
