@@ -13,7 +13,7 @@ export default function ContactComp() {
           exit={{ y: '100%' }}       // Optionally animate off-screen below when removed
           transition={{ duration: 2 }} // Control the duration of the animation
         >
-       <div className="h-screen bg-[url(/images/contactCover.jpg)] rounded-bl-full bg-fixed bg-cover md:bg-center bg-right " >
+       <div className="h-screen bg-[url(/images/contactCover.jpg)] rounded-bl-full  bg-fixed bg-cover md:bg-center bg-right " >
         <div className="md:ml-25 md:p-10">
          <Navbar/>
         </div>
@@ -26,7 +26,7 @@ export default function ContactComp() {
   viewport={{ once: false, amount: 0.3 }}
   
   >
-    <div className='md:text-5xl text-3xl font-bold md:p-10 p-5'>
+    <div className='md:text-5xl text-2xl font-bold md:p-10 p-5'>
         <h1>Contact Us</h1>
 
     </div>
@@ -54,15 +54,15 @@ export default function ContactComp() {
      >
 
       <div>
-         <h1 className='p-2 md:text-5xl text-4xl font-bold'>Get in Touch</h1>
+         <h1 className='md:text-5xl text-4xl font-bold'>Get in Touch</h1>
          </div>
 
-         <div className='p-10  bg-[url(/images/yarn31.webp)] bg-cover bg-center rounded-full md:w-[50%] '>
-          <form className='md:p-20 p-12 flex flex-col justify-center md:w-[75%] '>
+         <div className=' bg-[url(/images/yarn31.webp)] bg-cover bg-center rounded-full md:w-[50%] '>
+          <form className='md:py-20 p-12 flex flex-col justify-center pr-20 md:w-[70%] '>
             <input placeholder='Name' className='p-5 m-2 bg-white rounded-2xl'/>
             <input placeholder='Email' className='p-5 m-2 bg-white rounded-2xl'/>
             <textarea placeholder='Message ' className='p-5 m-2 bg-white rounded-2xl'></textarea>
-            <button className='bg-white rounded-2xl p-3 mt-2 ml-25 w-[30%] hover:bg-black hover:text-white hover:cursor-pointer '>Send</button>
+            <button className='bg-white rounded-2xl p-3 mt-2 w-[25%] ml-10 hover:bg-black hover:text-white hover:cursor-pointer '>Send</button>
           </form>
           
          </div>

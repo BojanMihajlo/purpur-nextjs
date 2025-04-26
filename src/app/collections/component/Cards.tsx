@@ -38,7 +38,7 @@ const CardItem: React.FC<CardItemProps> = ({ img, slug, transform, scrollProgres
           backgroundImage: `url(${img})`,
         }}
         className="border-b-4 border-r-4 rounded-xl bg-cover bg-no-repeat bg-center cursor-pointer transition-transform duration-300
-                   h-52 w-36 sm:h-60 sm:w-40 md:h-80 md:w-56"
+                   h-50 w-36   md:h-80 md:w-56"
       />
     </Link>
   );
@@ -57,7 +57,7 @@ const Cards: React.FC<MainProps> = ({ data, coverImages }) => {
 
   useEffect(() => {
     const randoms = coverImages.map(() => ({
-      x: Math.floor(Math.random() * 300 - 100),
+      x: Math.floor(Math.random() * 300 - 300),
       y: Math.floor(Math.random() * 300 - 150),
       rotate: Math.floor(Math.random() * 60 - 30),
     }));
@@ -67,11 +67,13 @@ const Cards: React.FC<MainProps> = ({ data, coverImages }) => {
   if (transforms.length === 0) return null;
 
   return (
-    <div className="min-h-screen bg-red-700 rounded-tl-full px-4 py-10 sm:p-10">
-      <div ref={wrapperRef} className="h-[380vh] relative">
+    <div className="min-h-screen bg-red-700 rounded-tl-full px-4 py-20 sm:p-10">
+      <div ref={wrapperRef} className="h-[420vh] relative">
         <div className="sticky top-0 h-screen flex items-center justify-center">
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3">
+
             {coverImages.map((img, i) => (
+              
               <CardItem
                 key={i}
                 img={img}
